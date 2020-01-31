@@ -1,0 +1,19 @@
+<!doctype html>
+
+<h1>{{title}}</h1>
+
+
+<!--The AppComponent template no longer needs <app-heroes> because the app will only display 
+    the HeroesComponent when the user navigates to it.-->
+    <!-- <app-heroes></app-heroes>-->
+    <nav>
+        <a routerLink="/dashboard">Dashboard</a>
+        
+      </nav>
+      <nav>
+        
+        <a routerLink="/heroes">Heroes</a>
+      </nav>
+    
+<router-outlet></router-outlet>
+

@@ -1,0 +1,28 @@
+<!doctype html>
+
+
+<!-- <p>heroes works!</p> -->
+ <!--uppercase in the interpolation binding-->
+ <!--[(ngModel)] is Angular's two-way data binding syntax.-->
+ <!--The parentheses around click tell Angular to listen for the <li> element's click event. 
+     When the user clicks in the <li>, Angular executes the onSelect(hero) expression.-->
+        
+        
+        
+        <!--Thanks to ngIf directive  This div will only appear if selected a hero-->
+        <div *ngIf="hero">
+        
+          <h2>{{hero.name | uppercase}} Details</h2>
+          <div><span style='color: red;'>ID: </span >{{hero.id}}</div>
+          <div><span style='color: blueviolet;'>PRICE: </span>{{hero.price}}</div>
+          <div><span style='color: green;'>DETAILS: </span>{{hero.description}}</div>
+          <div>
+           <!-- <label>name:
+              <input [(ngModel)]="hero.name" placeholder="name"/>
+            </label> -->
+          </div>
+        
+        </div>
+        <button (click)="goBack()">go back</button> <br>
+
+        <button (click)="save()">save</button>
